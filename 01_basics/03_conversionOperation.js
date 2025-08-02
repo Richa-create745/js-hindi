@@ -6,7 +6,7 @@ console.log(typeof (score));
 
 let Sc = "33";
 //"33" will get converted to 33
-console.log(typeof Sc); //=>string\
+console.log(typeof Sc); //=>string
 
 //suppose we want to convert the value of Sc from string to number
 
