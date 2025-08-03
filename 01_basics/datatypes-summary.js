@@ -3,7 +3,7 @@
 // PRIMITIVE (Call By Value) AND NON-PRIMITIVE(Refernce type)
 
 //PRIMITIVE :7 categories =>String, Number, Boolean, null, undefined, Symbol(used to make a value unique ), BigInt 
- console.log(" **************DATATYPES SUMMARY******************");
+console.log(" **************DATATYPES SUMMARY******************");
 
 const score = 100; //number
 const scoreVal = 100.36; //number
@@ -34,21 +34,52 @@ let myObj = {
     name1: "suraj",
     name2: "varnika", //all are objects ,they can be of any datatype
     age: 42,
-course: "B.Tech"
+    course: "B.Tech"
 
 };
 
 //functions
- //storing func in a variable
+//storing func in a variable
 
-const myfunc = function(){
-console.log("3rd August : Happy Friendship Day");
+const myfunc = function () {
+    console.log("3rd August : Happy Friendship Day");
 }
 
 
 //how to find datatype of anything
- console.log(typeof bigNumber); // give bigint
- console.log(typeof outSideTemp); //=> object
+console.log(typeof bigNumber); // give bigint
+console.log(typeof outSideTemp); //=> object
 
-  console.log(typeof myfunc); // =>function but called as object function 
-   console.log (typeof anotherid) //symbol
+console.log(typeof myfunc); // =>function but called as object function 
+console.log(typeof anotherid) //symbol
+
+
+
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// MEMORY
+// stack (primitive) =>a copy is created
+// heap(Non-primitve) => a refernce to the original value i.e., changes can be made to original value 
+
+let myYoutubeName = "hiteshchoudhrydotcom";
+let anothername = myYoutubeName;
+
+anothername = "chaiaurcode";
+console.log(anothername); //changed to chaiaurcode
+console.log(myYoutubeName); // stick to old value => hiteshchoudharydotcom .....bcoz here copy of var myYoutubeName is passed to anothername,,,,thatswhy origial value dont get affected
+  
+
+//advanced datatype -objects 
+//user1 is prmmitv but value inside it are objects that are stored in heap...
+let user1 = {  //will copy and get into heap
+    email: "user@gmail.com",
+    upi: "yser@ybl",
+};
+
+let user2= user1; 
+//taking value from user1 thus user two or user onw pointing to same data
+user2.email = "richa@google.com";
+console.log(user1.email);
+console.log(user2.email)
