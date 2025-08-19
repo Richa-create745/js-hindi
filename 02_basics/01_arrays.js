@@ -59,3 +59,5 @@ const myn2 = myArr.splice(1,3); //chnged original array
 console.log(myn2);
 
 console.log("C",myArr); //original array is chnged here
+
+
