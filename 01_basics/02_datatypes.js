@@ -14,7 +14,8 @@ let isLoggedIn = false; //boolean datatype
  //null => a dattype or we can say that it is a stand alone value, or a representation of empty value,,,we can assign it to variable too
 let accountstate = null;
 console.log(accountstate);
-
+//symbol=?somethign unique
+//bigint
 //undefined =>when no value is assigned to a variable
 
 console.log(typeof " Richa");//helps in giving type of the value given to it...
