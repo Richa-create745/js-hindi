@@ -51,7 +51,7 @@ console.log(typeof StringNum) //=> gives type string1
 
 
 //*************************OPERATIONS**********************************
-
+console.log("//////// STARTING OPERATIONS NOW///////////");
 let vals = 3;
 let negvalue = -vals;
 console.log(negvalue);
