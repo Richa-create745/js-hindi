@@ -54,7 +54,7 @@ console.log(typeof myfunc); // =>function but called as object function
 console.log(typeof anotherid) //symbol
 
 
-
+myfunc();
 
 
 
