@@ -13,7 +13,7 @@ console.log("few more");
 console.log(null > 0); //false
 console.log(null <0);
 console.log(null == 0); //false
-console.log(" >= & <= works differently in comparison to == ");
+console.log(" >= & <= works differ ently in comparison to == ");
 console.log(null >= 0); // =>true as  , here null is converted to a number zero as >=,<= converts null to 0
  
 console.log("few more for undefined");
