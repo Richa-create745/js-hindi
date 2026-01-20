@@ -75,15 +75,15 @@ console.log("1" + "2"); // =>12
 console.log("1" + 2 + 2); //=> 122
 console.log(1 + 2 + "2"); // =>32
 
-console.log(3 + 4 * 5 % 3); //dont do in this way,,instead use parenthesis
+//console.log(3 + 4 * 5 % 3); dont do in this way,,instead use parenthesis
 console.log((3 + 4) * 5 % 3);
 
 // similarly dont do this way..........
 console.log(+true);
-console.log(+"");
+console.log(+""); // as "" =>empty qoutes give false that is 0
 //or
 let num1, num2, num3;
-num1 = num2 = num3 = 2 + 2; //perform simle and readable things to make code simple
+num1 = num2 = num3 = 2 + 2; //perform simple and readable things to make code simple
 let gameCounter = 100;
 
 gameCounter++; //study about pre and postfix increments
