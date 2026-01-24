@@ -1,9 +1,9 @@
 //datatypes - summary
 // on the basis of how data is stored in memory and how it can be accessed ,, datatypes are divided into two categories 
-// PRIMITIVE (Call By Value) AND NON-PRIMITIVE(Refernce type)
+// PRIMITIVE (Call By Value) AND NON-PRIMITIVE(Refehttps://www.youtube.com/watch?v=M0YImBHQsWU&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=29&pp=iAQBrnce type)
 
 //PRIMITIVE :7 categories =>String, Number, Boolean, null, undefined, Symbol(used to make a value unique ), BigInt 
-console.log(" **************DATATYPES SUMMARY******************");
+console.log("**************DATATYPES SUMMARY******************");
 
 const score = 100; //number
 const scoreVal = 100.36; //number
@@ -11,12 +11,11 @@ const isLoggedIn = false; //boolean
 const outSideTemp = null; //null
 let userEmail; //simply undefined for now  or can manually do it undefined
 
-
 const id = Symbol('1234'); // for making id unique ,use symbol , pass the value in it and it will return a new unique symbol value
 const anotherid = Symbol('1234'); //although values of both ids are same but both are unique as due to symbol
 // lets check whether above two are equal or not
 
-console.log("whether id and anotherid are equal or not")
+console.log("whether id and anotherid are equal or not");
 console.log(id == anotherid);
 
 //BigInt

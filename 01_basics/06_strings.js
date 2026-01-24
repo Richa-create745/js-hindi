@@ -28,7 +28,7 @@ console.log(gameName.toUpperCase()); //but will not change original value
    console.log(gameName.indexOf('s')) ; // will give index of the input character
 
    //dividing a string to a substrinhg
-  const newString= gameName.substring(0,6) // atarting from 0th inex to (4-1) index 
+  const newString= gameName.substring(0,6) // starting from 0th index to (4-1) index 
   console.log(newString);
 
   // .slice => can give range as input and negative value as well
@@ -36,7 +36,7 @@ const anotherString = gameName.slice(-10 , 6); // -10 = length-10 =1  => now it 
 console.log(anotherString)
 
  //trim and replace func.      
- const newStringOne = "  suraj  " ;  //removing unnecessary spaces
+ const newStringOne = "  hyGuys  " ;  //removing unnecessary spaces
  console.log(newStringOne);
  console.log(newStringOne.trim()); // visit trim js on MDN docs for more info
 
@@ -44,11 +44,13 @@ console.log(anotherString)
  const url ="https://richa.com/richa%26sharma" ; //browser dont understand spaces in between any url
  //replcing %26 by -
 console.log(url.replace('%26', '-'));
-//even we can ask qustions ,whther url include the guven al or not
+//even we can ask qustions ,whether url include the given data/name or not
  console.log(url.includes('suraj'));
  console.log(url.includes('varnika'));
 console.log(url.includes('richa'));
-
-
-console.log(gameName.split('-')) //study split more 
+const routine  = new String('helllo-guys-whatsup');
+/* split => will split the string 
+"-" => acts as a separator
+*/
+console.log(routine.split('-')) //study split more 
   
