@@ -31,7 +31,7 @@ console.log(Math); //basically an object which has many properties , go to conso
 console.log(Math.abs(-45)); // turns negative to positive
 
 //round-off values
-console.log(Math.round(4, 3));
+console.log(Math.round(4.6));
 console.log(Math.round(5.6));
 
 //ceiling values  and floor values

@@ -21,7 +21,7 @@ console.log(typeof myDate); //IMPORTANT
 
 //declaring a new date
 
-let myCreatedDate = new Date(2025, 0, 3); //months start from 0 in javascript in case of single digit
+let myCreatedDate = new Date(2026, 0, 24); //months start from 0 in javascript in case of single digit
 console.log(myCreatedDate.toDateString());
 console.log("another way ");
 let newdate =new Date(2025,0,19,8,9);
@@ -30,7 +30,7 @@ console.log(newdate.toLocaleString());
    
  //format : yyyy -mm-dd
  
- let date1 =new Date("2025-01-13"); //here months start from 1
+ let date1 =new Date("2025-01-25"); //here months start from 1
  //but in india mostly followed - dd/mm/yyyy
  console.log(date1.toLocaleString());
 
@@ -42,7 +42,7 @@ console.log(newdate.toLocaleString());
  //extracted value from this value
  console.log(myCreatedDate.getTime());
 
- console.log(Math.floor(Date.now() / 1000));
+ console.log(Math.floor(Date.now() / 1000));// getting time stamp in seconds... using math.floor to avoid decimals
 
 
 
