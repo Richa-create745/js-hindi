@@ -33,8 +33,8 @@
 
 console.log(Array.isArray("hitesh")); // asking whether it is an array or not
 console.log(Array.from("12345")) ;// makw an array from given value
-//interseting case
-console.log(Array.from({name: "richa"}))  ; // not able to convert this
+//interesting case
+console.log(Array.from({name: "richa"}))  ; // not able to convert this into array,,bcoz isme hume btana pdega ki single characters ka arraya bnana h ya phir pure naam ko ek array me likhna h //mtlb agr name - "richa" toh ek ek char ko ag krke asa element likhna h ya pure naam ko single smjhke
 
 
 let score1 =100;
