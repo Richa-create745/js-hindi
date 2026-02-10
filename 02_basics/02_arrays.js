@@ -2,13 +2,14 @@
  const arrays =[ "rahul", "rohan","atharv"];
  const dc= ["richa","varnika","prachi"];
 
-//  arrays.push(dc); //gives array inside array  =>dc will be treated as another element in arrays  
+//   arrays.push(dc); //gives array inside array  =>dc will be treated as another element in arrays  
 //  console.log(arrays); //
 
 //  console.log(arrays[3]); //will print array dc as it is third elemnt of arrays
 //   console.log(arrays[3][0]); //give first element of dc-array =>richa
 
   //using concatenate to merge the arrays properly
+  //concat returns a new array
   console.log("combined arrays-----------")
   const CombineArr = arrays.concat(dc);
   console.log(CombineArr);
@@ -22,7 +23,7 @@
 
    // RARE CASE - ARRAY inside Arrays
    const another_array = [1,2,3,[4,5,6],7,[6,7,[4,5]]];
-   const real_another_array = another_array.flat(Infinity); // give depth as arguement matlab kitne arguement tkk array ko normlaise krn ah...for now we have do it infinite =>it will solve completely byitself
+   const real_another_array = another_array.flat(Infinity); // give depth as arguement matlab kitne arguement tkk array ko normalise krn ah...for now we have do it infinite =>it will solve completely byitself
 
    console.log(real_another_array);
 

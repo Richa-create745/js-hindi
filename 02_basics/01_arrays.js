@@ -5,7 +5,7 @@ const myArr = [0, 2, 3,64, 21];
 console.log(myArr[0])
 //2nd way to declare
 
- const myfrnd =["suraj", "varnika","ridhhi","jyoti"];
+ const myfrnd =["Ruhi", "varnika","ridhhi","jyoti"];
 
  console.log(myfrnd[1]);
 
@@ -27,6 +27,8 @@ console.log(myArr[0])
  myArry2.unshift(11); //will insert new elemnts at start and thus needs to shift the rest elements ,,,sounds hectic when array is large sized,,,coz each elemnt needs to be shift by one pplace
  console.log(myArry2);
 myArry2.shift(); //will remove the unshift val
+// using again
+// myArry2.shift();
 console.log(myArry2);
 
 
@@ -48,7 +50,7 @@ const newArr = myArr.join();
   
 console.log("A" , myArr);
 
-const myn1 = myArr.slice(1,3);
+const myn1 = myArr.slice(1,3); //returns a section of array
 
 console.log(myn1);
 console.log("B", myArr);
