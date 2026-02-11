@@ -29,12 +29,26 @@ console.log(JsUser["full name"]) // yaha pe hum dot use kr hi nhi skte....automa
 //declaring a symbol
 const mySym = Symbol("key1")
 const JS_User = {
+    email : "richa221@gmail.com",
     Name : "ruhan",
     [mySym]: "mykey1"
-}
+} //printing
+console.log(JS_User)
+
 //console.log(JS_User.mySym)
 console.log(typeof JS_User.mySym) //but still iska type symbol nhi h 
 //so uske liye mysym ko [] me likho 
 //that is => [mysym] : "mykey1" inside the object IS_User
+
 console.log(JS_User[mySym])
-console.log(typeof JS_User.mySym)
+console.log(typeof JS_User.mySym);
+
+//changing value of object keys..or overwrite
+JS_User.email = "suraj123@gmail.com";
+ //freezinf values pf object..taki koi value chnge na kr paye
+ 
+ Object.freeze(JS_User);
+ //now trying to change values
+
+ JS_User.email = "surajkumar12@gmail.com";//this won't chnage as above we have freezed the object
+ console.log(JS_User);
