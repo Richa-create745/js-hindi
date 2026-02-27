@@ -5,9 +5,10 @@
 // koi apna alg printer nhi khareed ta hai,,sb ek hi resource ko share krte h
 //always formed by constructor 
 
+
 //creating object
 //======> const JsUser ={}
-//OR .other way of creating object => Object.create
+//OR .other way of creating object is through cinstructor method => Object.create
 const JsUser={
     name :"hitesh", 
     "full name" : "richa dhiman",//here name act as a key,,,or key kuch bhi ho skta h,,it cane be like    0,1,2 ...so on instead of name
@@ -20,11 +21,11 @@ const JsUser={
     lastLoggedIn : ["monday","saturday"]
 }
 //accessing object
-console.log(JsUser.email); //yaha pe dot(.) ki vjah s strinf ki trh likhne ki jrurt nhi h email ko
+console.log(JsUser.email); //yaha pe dot(.) ki vjah s string ki trh likhne ki jrurt nhi h email ko
 //OR
 console.log(JsUser["email"]); //here we have pass email as string ,,kuki as discussed inko as a string process kiya jata h
 
-console.log(JsUser["full name"]) // yaha pe hum dot use kr hi nhi skte....automatic way m khud yhei ek tareeka show ho raha h ...=> try using (jsuser.fullname)  ,,ye khdu auto correct ho jaega
+console.log(JsUser["full name"]) // yaha pe hum dot use kr hi nhi skte....automatic way m khud yhei ek tareeka show ho raha h ...=> try using (jsuser.fullname)  ,,ye khud auto correct ho jaega
 
 //declaring a symbol
 const mySym = Symbol("key1")
@@ -45,10 +46,27 @@ console.log(typeof JS_User.mySym);
 
 //changing value of object keys..or overwrite
 JS_User.email = "suraj123@gmail.com";
- //freezinf values pf object..taki koi value chnge na kr paye
+ //freezing values of object..taki koi value chnge na kr paye
  
- Object.freeze(JS_User);
+ //Object.freeze(JS_User);
  //now trying to change values
 
  JS_User.email = "surajkumar12@gmail.com";//this won't chnage as above we have freezed the object
  console.log(JS_User);
+
+ //adding greetings with JS_User
+ JS_User.greeting = function(){
+    console.log("hello Js User");
+ }
+ //console.log(JS_User.greeting); //gives undefined now
+ //console.log(JS_User.greeting()); //error bcoz we have freeezed the function above,,,so infreeze it first
+
+console.log(JS_User.greeting()); //gives output 
+// if we pass only js_user.greeting
+console.log(JS_User.greeting); //gives
+ 
+///create another function
+ JS_User.greetingTwo = function(){ //targeting the name var of js_user function using $ n this keyword
+    console.log(` helllo js user , ${this.Name}`)
+ }
+ console.log(JS_User.greetingTwo());
