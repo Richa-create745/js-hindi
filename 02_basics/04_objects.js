@@ -85,4 +85,16 @@ const course ={
     courseprice : "999",
     courseInstructor : "hitesh"
 }
-//
+// using these values
+ //course.courseInstructor ;
+  //OR BETTER WAY
+//   const {courseInstructor} = course // here course represents ki kaha s value extract krni h
+//    console.log(courseInstructor) //now no need to write course.courseinstructor again n again
+   
+   // or hum courseinstructor/or any otherkey ko kuch naam bhi de skte h for more convenience
+
+    const {courseInstructor: instructor} = course;
+    console.log(instructor);
+
+    
+ 
