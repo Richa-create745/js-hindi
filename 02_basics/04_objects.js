@@ -96,5 +96,25 @@ const course ={
     const {courseInstructor: instructor} = course;
     console.log(instructor);
 
-    
+    //talking a bit about APIs =?jba hume apna kaam kisi or se karvana ho like in a hotel we order something from menu so khana kse bnega kse aega its not our headache,,that basically a kind of documentation of APIs, similrl if we lgin to google its not our responsibility ki google kse user ko verify  krega n etc
+
+/*  API is basically kuch values hoti h jo backend s ati h,,uhne kse likhna h is called AP..
+phle vo values XML structure (was complex) se ati thi or ab ati h JSON me
+*/
+//lets see how JSON looks like objects
+
+// { //JSON
+//     "Name" : "mohit",
+//     "courseName" : "jshindi",
+//     "price" :"free"
+
+// }
+
+// and,, sometime API can be in form of arrays too
+    [ //=>this represent an array
+         {}, 
+         {},
+         {}
+    ]
+    //go to randomuser.me API...copy the link of api from how to use section ,,use google p dalke result copy kro then JSON Formatter m uprlod kro then do formator beautify after that we will see code this code can be further get converted to tree struucture or text or more
  
