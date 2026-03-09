@@ -24,39 +24,39 @@ console.log(typeof myDate); //IMPORTANT
 let myCreatedDate = new Date(2026, 0, 24); //months start from 0 in javascript in case of single digit
 console.log(myCreatedDate.toDateString());
 console.log("another way ");
-let newdate =new Date(2025,0,19,8,9);
+let newdate = new Date(2025, 0, 19, 8, 9);
 console.log(newdate.toLocaleString());
- console.log("lets tr another way");
-   
- //format : yyyy -mm-dd
- 
- let date1 =new Date("2025-01-25"); //here months start from 1
- //but in india mostly followed - dd/mm/yyyy
- console.log(date1.toLocaleString());
+console.log("lets tr another way");
 
- //we do have timestamps in js
- let mytimestamp = Date.now(); //in case of desinging quizez ,poles ,etc
+//format : yyyy -mm-dd
 
- console.log(mytimestamp); //gives milisecond values from the date 1 january 1970 to till now
-  
- //extracted value from this value
- console.log(myCreatedDate.getTime());
+let date1 = new Date("2025-01-25"); //here months start from 1
+//but in india mostly followed - dd/mm/yyyy
+console.log(date1.toLocaleString());
 
- console.log(Math.floor(Date.now() / 1000));// getting time stamp in seconds... using math.floor to avoid decimals
+//we do have timestamps in js
+let mytimestamp = Date.now(); //in case of desinging quizez ,poles ,etc
+
+console.log(mytimestamp); //gives milisecond values from the date 1 january 1970 to till now
+
+//extracted value from this value
+console.log(myCreatedDate.getTime());
+
+console.log(Math.floor(Date.now() / 1000));// getting time stamp in seconds... using math.floor to avoid decimals
 
 
 
- let newDate = new Date();
- console.log(newDate);
- console.log(newDate.getMonth()); //give month ,starting from zero
- console.log(newDate.getDay()); 
+let newDate = new Date();
+console.log(newDate);
+console.log(newDate.getMonth()); //give month ,starting from zero
+console.log(newDate.getDay());
 
- //in case we need to write full time 
+//in case we need to write full time 
 
- `${newDate.getDay()}` //also gives day
+`${newDate.getDay()}` //also gives day
 
- //another method
- newDate.toLocaleString('default',{
-    weekday:"long"
-  
- } )
+//another method
+newDate.toLocaleString('default', {
+   weekday: "long"
+
+})

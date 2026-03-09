@@ -8,7 +8,7 @@ var accountPasswod = "12345";
 //also in js ,variable can either be created wihtout using let,,,but it is considered as false or bad practice
 
 accountCity = "roorkee";
- let accountState;
+let accountState;
 
 //accountId = 2;  can't be changed as it is constant
 
@@ -18,4 +18,4 @@ accountPasswod = "234";
 accountCity = "Blr";
 
 //Using console , table can represent the data in form of tables
-console.table([accountId,accountEmail,accountPasswod,accountCity,accountState]); 
+console.table([accountId, accountEmail, accountPasswod, accountCity, accountState]); 

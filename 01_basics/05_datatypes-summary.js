@@ -68,7 +68,7 @@ let anothername = myYoutubeName;
 anothername = "chaiaurcode";
 console.log(anothername); //changed to chaiaurcode
 console.log(myYoutubeName); // stick to old value => hiteshchoudharydotcom .....bcoz here copy of var myYoutubeName is passed to anothername,,,,thatswhy origial value dont get affected
-  
+
 
 //advanced datatype -objects 
 //user1 is prmmitv but value inside it are objects that are stored in heap...
@@ -77,7 +77,7 @@ let user1 = {  //will copy and get into heap
     upi: "yser@ybl",
 };
 
-let user2= user1; 
+let user2 = user1;
 //taking value from user1 thus user two or user onw pointing to same data
 user2.email = "richa@google.com";
 console.log(user1.email);
