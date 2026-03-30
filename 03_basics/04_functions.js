@@ -4,7 +4,7 @@
 //creating an object
 const user = {
     username: "suyash",
-    price: 99,
+    price: 99, 
     //a function inside an object
     welcomeMsg: function () {
         console.group(`${this.username} , welcome to the platform`); //this keyword is used to to access current context..jse filhal current context h object ka whole content.... so here we r accessing username
