@@ -30,3 +30,4 @@ Chai();
     console.log(`hye my name is ${name} and my age is ${age}`)
    }) ('richa', 21);
 
+ 
