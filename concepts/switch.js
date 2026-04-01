@@ -10,11 +10,12 @@
  
 
  //select the content n press shift +alt + down arry to cpy
+
   const month =4;
   switch (month) {
     case 1:
-         console.log('january')
-     break;
+    console.log('january')
+    break;
 
     case 2:
     console.log("february")
@@ -23,30 +24,37 @@
     case 3:
     console.log("march")
     break;
+
     case 4:
     console.log("april")
     break;
   
     
     default: console.log("invalid month")
-        break;
+    break;
+
   }
    const name ="suraj";
    switch (name) {
+    
     case "ruhan":
-        console.log("false val")
-        break;
+    console.log("false val")
+    break;
+
     case "mohit":
-        console.log("false val")
-        break;
+    console.log("false val")
+    break;
+
     case "richa":
-        console.log("true val")
-        break;
+    console.log("true val")
+    break;
+
     case "suraj":
-        console.log("true val")
-        break;
+    console.log("true val")
+    break;
    
     default:
-        console.log("enter the right name");
-        break;
+    console.log("enter the right name");
+    break;
+
    }
