@@ -34,9 +34,11 @@
     break;
 
   }
+
+  
    const name ="suraj";
    switch (name) {
-    
+
     case "ruhan":
     console.log("false val")
     break;
@@ -58,3 +60,5 @@
     break;
 
    }
+
+   
