@@ -85,3 +85,62 @@ console.log(key, '=>',value); //this will print value n keys seperately
 
 
 //foreach() loop
+const coding = ["js","ruby","java","cpp","python"];
+ 
+coding.forEach( function (val) { // ab ye function array  ke andar chl raha h
+console.log(val);
+
+} );
+
+// writing function as arrow function
+
+coding.forEach((value)=> {
+   console.log(value);
+})
+ 
+// more on it...
+function printMe(item){ //printme function ek item lega or usko print kr deta h
+   console.log(item);
+}
+console.log("+++++++++++++++++++++++++++++++++++++++");
+coding.forEach(printMe); 
+
+//printing all things of an array
+ coding.forEach((item,index,arr)=>{
+   console.log(item, index, arr)
+ })
+
+
+ //passing object in a array
+  const myobj =[
+   {
+languageName:"JS",
+languagefilename:"js"
+   },
+
+   {   
+languageName:"python",
+languagefilename:"py"
+   },
+
+   {
+languageName:"c++",
+languagefilename:"cpp"
+   },
+
+   
+   {
+languageName:"Java",
+languagefilename:"j"
+   },
+
+   {
+languageName:"ruby",
+languagefilename:"rb"
+   }
+  ]
+
+  myobj.forEach((item)=>{
+console.log(item.languagefilename);
+
+  })
